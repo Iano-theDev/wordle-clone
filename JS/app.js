@@ -2,7 +2,18 @@ const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
 const messageDisplay = document.querySelector('.message-container')
 
-const wordle = 'SUPER'
+let wordle
+
+const getWordle = () => {
+    fetch('http://localhost:8000/word')
+        .then(response => response.json())
+        .then(json => {
+            wordle = json.toUpperCase()
+            console.log(json)
+        })
+        .catch(err => console.log(err))
+}
+getWordle()
 
 const keys = [
     'Q',
@@ -157,7 +168,7 @@ const flipTiles = () => {
     guess.forEach((guess, index) => {
         if (guess.letter == wordle[index]) {
             guess.color = 'green-overlay'
-            checkWordle = checkWordle, replace(guess.letter, '')
+            checkWordle = checkWordle.replace(guess.letter, '')
         }
     })
 
