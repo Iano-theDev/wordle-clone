@@ -1,0 +1,26 @@
+{
+  "name": "install",
+  "version": "1.0.0",
+  "description": "This is a clone of the game \"WORDLE\" following Ania Kubows tutorial on youtube.",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "nodemon JS/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iano-theDev/wordle-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iano-theDev/wordle-clone/issues"
+  },
+  "homepage": "https://github.com/Iano-theDev/wordle-clone#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
