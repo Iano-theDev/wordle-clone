@@ -1,7 +1,7 @@
 {
   "name": "install",
   "version": "1.0.0",
-  "description": "This is a clone of the game \"WORDLE\" following Ania Kubows tutorial on youtube.",
+  "description": "This is a clone of the game \"WORDLE\" following Ania Kubow's tutorial on youtube.",
   "main": "index.js",
   "scripts": {
     "start:backend": "nodemon JS/index.js",
